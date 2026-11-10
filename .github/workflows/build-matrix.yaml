@@ -21,10 +21,10 @@ jobs:
       - name: Checkout submodules
         run: |
           rm -rf ext/rusefi
-          git clone --depth 1 
-          master
-          https://github.com/rusefi/rusefi.git
-          ext/rusefi
+          git clone --depth=1  https://github.com/rusefi/rusefi.git  ext/rusefi
+          
+      
+     
       - name: Set matrix
         id: set-matrix
         run: |
@@ -57,10 +57,7 @@ jobs:
       - name: Checkout submodules
         run: |
           rm -rf ext/rusefi
-          git clone --depth 1
-          master
-          https://github.com/rusefi/rusefi.git
-          ext/rusefi
+          git clone --depth=1  https://github.com/rusefi/rusefi.git  ext/rusefi
       # The submodule is pinned, so its date_stamp.h (VCS_DATE, the firmware
       # version date) is frozen. Stamp today's date so builds report the actual
       # build date instead of a stale one. Mirrors ext/rusefi set-date.yaml.
