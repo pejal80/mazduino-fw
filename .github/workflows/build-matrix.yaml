@@ -22,6 +22,7 @@ jobs:
         run: |
           git config --global url."https://x-access-token:${{ secrets.MY_REPO_PAT }}@github.com/".insteadOf "git@github.com:"
           git submodule update --init --force
+          --force
 
       - name: Set matrix
         id: set-matrix
@@ -56,6 +57,7 @@ jobs:
         run: |
           git config --global url."https://x-access-token:${{ secrets.MY_REPO_PAT }}@github.com/".insteadOf "git@github.com:"
           git submodule update --init --force
+          --force
 
       # The submodule is pinned, so its date_stamp.h (VCS_DATE, the firmware
       # version date) is frozen. Stamp today's date so builds report the actual
