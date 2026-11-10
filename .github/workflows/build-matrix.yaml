@@ -21,7 +21,7 @@ jobs:
       - name: Checkout submodules
         run: |
           rm -rf ext/rusefi
-          git clone --depth 1 --branch
+          git clone --depth 1 
           master
           https://github.com/rusefi/rusefi.git
           ext/rusefi
@@ -57,7 +57,7 @@ jobs:
       - name: Checkout submodules
         run: |
           rm -rf ext/rusefi
-          git clone --depth 1 --branch
+          git clone --depth 1
           master
           https://github.com/rusefi/rusefi.git
           ext/rusefi
