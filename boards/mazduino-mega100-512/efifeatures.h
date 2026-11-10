@@ -85,11 +85,10 @@
 
 /* Launch control — omitted on 512KB budget variant */
 #undef EFI_LAUNCH_CONTROL
-#define EFI_LAUNCH_CONTROL FALSE
-
+#define EFI_LAUNCH_CONTROL TRUE
 /* VVT PID closed-loop — omitted on 512KB budget variant */
 #undef EFI_VVT_PID
-#define EFI_VVT_PID FALSE
+#define EFI_VVT_PID TRUE
 
 /* Vehicle speed sensor support */
 #undef EFI_VEHICLE_SPEED
@@ -105,7 +104,7 @@
 
 /* Boost control — omitted on 512KB budget variant */
 #undef EFI_BOOST_CONTROL
-#define EFI_BOOST_CONTROL FALSE
+#define EFI_BOOST_CONTROL TRUE
 
 /* Engine sniffer (real-time trigger oscilloscope) — debug tool */
 #undef EFI_ENGINE_SNIFFER
